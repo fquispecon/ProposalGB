@@ -92,6 +92,5 @@ def send_job():
     db.session.commit()
     return job_schema.jsonify(new_task)
 
-
 if __name__=="__main__":
     app.run(debug=True)
